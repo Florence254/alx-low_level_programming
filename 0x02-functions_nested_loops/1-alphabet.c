@@ -2,11 +2,11 @@
 /**
  * prints alphabets - function that prints alphabet in lower case
  *
- * Return always 0;
+ * Return: always 0;
  */
 
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char i;
 

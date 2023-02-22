@@ -1,27 +1,25 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - a function that print the first 50 fibonacci numbers.
- * Return: Nothing.
+ * print_alphabet_x10 - a function that prints 10 times the alphabet,
+ * in lowercase
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	unsigned long count, i, j, k;
+	char abc;
+	int i;
 
 	i = 0;
-	j = 1;
 
-	for (count = 0; count < 50; count++)
+	while (i < 10)
 	{
-		k = i + j;
-		i = j;
-		j = k;
-		printf("%lu", k);
-		if (count == 49)
-			putchar('\n');
-		else
+		abc = 'a';
+		while (abc <= 'z')
 		{
-			printf(", ");
+			_putchar(abc);
+			abc++;
 		}
+		_putchar('\n');
+		i++;
 	}
-	return (0);
 }
